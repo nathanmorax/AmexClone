@@ -45,7 +45,9 @@ struct HomeView: View {
                 }
             }
             .toolbar {
-                toolBarItem
+                ToolbarItem(placement: .principal) {
+                    toolBarItem
+                }
             }
             
         }
@@ -59,6 +61,7 @@ struct HomeView: View {
             Text("****13009")
                 .font(.caption)
         }
+        .frame(maxWidth: .infinity)
         .foregroundColor(.white)
     }
     
